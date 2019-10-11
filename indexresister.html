@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+ <!-- header   -->
+<div class="header">
+    <div class="leftBox">
+            <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+    </div> 
+    <div class="rightBox">
+        <div class="row">
+            <div class="col-md-1 titl">
+                <a class="art" href="#">首页</a>
+                <div id="line" style="left:0 width=66px"></div>
+            </div>
+            <div class="col-md-1 titl"><a class="art" href="#">所有商品</a>
+                <div id="line" style="left:0 width=66px"></div>
+            </div>
+            <div class="col-md-1 count titl">
+                <a class="art in" href="#">国内品牌
+                    <span class="iconfont icon-xiajiantou"></span>
+                </a>
+                <div id="line" style="left:0 width=66px"></div>
+                <div class="downBox1">
+                    <a class="downMain downa" href="#">彩虹人</a>
+                    <a class="downMain downa" href="#">ACE</a>
+                    <a class="downMain downa" href="#">心忆</a>
+                    <a class="downMain downa" href="#">瑞声</a>
+                    <a class="downMain downa" href="#">塔罗</a>
+                    <a class="downMain downa" href="#">Adela</a>
+                </div>
+            </div>
+            <div class="col-md-1 count titl"><a class="art out" href="#">国外品牌<span class="iconfont icon-xiajiantou"></span></a>
+                <div id="line" style="left:0 width=66px"></div>
+                <div class="downBox2">
+                    <a class="downMain downb" href="#">Gstring</a>
+                    <a class="downMain downb" href="#">Kanilea</a>
+                    <a class="downMain downb" href="#">Koaloha</a>
+                    <a class="downMain downb" href="#">Aoanle</a>
+                    <a class="downMain downb" href="#">Bigisland</a>
+                    <a class="downMain downb" href="#">Romero</a>
+                    <a class="downMain downb" href="#">Pono</a>
+                    <a class="downMain downb" href="#">Outdoor</a>
+                </div>
+            </div>
+            <div class="col-md-1 count titl"><a class="art" href="#">培训服务<span class="iconfont icon-xiajiantou"></span></a>
+                <div id="line" style="left:0 width=66px"></div>
+                <div class="downBox3">
+                    <a class="downMain downc" href="#">培训课程</a>
+                    <a class="downMain downc" href="#">拾音器安装</a>
+                </div>
+            </div>
+            <div class="col-md-1 titl"><a class="art" href="#">总代理</a>
+                <div id="line" style="left:0 width=66px"></div>
+            </div>
+            <div class="col-md-1 titl"><a class="art" href="#">淘宝店</a>
+                <div id="line" style="left:0 width=64px"></div>
+            </div>
+            <div class="col-md-3 titl"><a class="art" href="#">博客</a>
+                <div id="line" style="left:0 width=64px"></div>
+            </div>
+            <div class="col-md-2 titl">
+                <a class="icon" href="#"><span class="iconfont icon-sousuo" style="font-size: 22px; color: black"></span></a>
+                <a class="icon" href="#"><span class="iconfont icon-yonghu" style="font-size: 22px; color: black"></span></a>
+                <a class="icon" href="#"><span class="iconfont icon-gouwuche" style="font-size: 22px; color: black"></span></a>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- banner   -->
+<div class="banner">
+    <div class="registerBox">
+        <div class="h"><p>注册</p></div>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="手机/邮箱/用户名">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="设置密码">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="确认密码">
+            </div>
+        </form>
+        <div class="loginBox">已有账号？请<a id="goin" href="#">直接登录</a></div>
+        <input class="resBtn" type="button" value="注册">
+        <div class="spn">
+            <span class="idLogin">社交账号登录</span>
+        </div>
+        <hr>
+        <div class="footIco">
+            <a id="weixin" href="#">
+                <span class="iconfont icon-weixin-copy"></span>
+                <div class="box weixinBox">微信登录</div>
+            </a>
+            <a id="weixin" href="#">
+                <span class="iconfont icon-QQ1"></span>
+                <div class="box qqBox">QQ登录</div>
+            </a>
+            <a id="weixin" href="#">
+                <span class="iconfont icon-weibo-copy"></span>
+                <div class="box weiboBox">微博登录</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="search">
+	<div class="searchBox">搜索</div>
+	<div class="searchKey">
+		<input class="setSearch" type="text" placeholder="请输入关键字">
+	</div>
+	<div class="oksearch">
+		<a id="remove" href="#">取消</a>
+		<a id="remove" href="#">确定</a>
+	</div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="footerMain">
+        <div class="footerMid">
+            <div class="shop">
+                <a class="our" href="#">关于我们</a>
+                <a class="our" href="#">线下活动</a>
+                <a class="our" href="#">购物指南</a>
+            </div>
+            <div id="icoBox">
+                <div class="boxMain box1">
+                    <a id="footIco" class="iconfont icon-weixin1" href="#"></a>
+                <a id="footIco" class="iconfont icon-weixin-copy" href="#"></a>
+                </div>
+                <div class="boxMain box2">
+                    <a id="footIco" class="iconfont icon-weibo3" href="#"></a>
+                <a id="footIco" class="iconfont icon-weibo2" href="#"></a>
+                </div>
+                <div class="boxMain box3">
+                    <a id="footIco" class="iconfont facebook_facebook icon-facebookfacebook522" href="#"></a>
+                <a id="footIco" class="iconfont facebook_facebook icon-facebookfacebook511" href="#"></a>
+                </div>
+                <div class="boxMain box4">
+                    <a id="footIco" class="iconfont instagram icon-instagram1" href="#"></a>
+                <a id="footIco" class="iconfont instagram icon-instagram" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerBot">
+            <span class="uke">浙&nbsp;ICP备13003131号-4&nbsp;&copy;&nbsp;2015&nbsp;4uke&nbsp;All&nbsp;right&nbsp;reserverd</span>
+        </div>
+    </div>
+</div>
+<div class="chatMain">
+    <a id="chat" class="iconfont icon-liaotian5"></a>
+    <!-- chatBox -->
+    <div class="chatBox">
+        <div class="chatTop">
+            <div class="chatLeft">
+                <img class="chatImg" src="img/chat.png" alt="">
+                <div class="imgRight">
+                    <p class="signName">4UKE</p>
+                    <p class="signName">我们专注尤克里里</p>
+                </div>
+            </div>
+            <div class="titleBox">
+                <a id="lada" href="#">
+                    <span class="iconfont icon-laba"></span>
+                </a>
+                <a id="lada" href="#">
+                    <span class="iconfont icon-xiajiantou"></span>
+                </a>
+            </div>
+        </div>
+        <ul id="content" class="content">
+        <a id="more" href="#">加载更多消息</a>
+            <li class="msgContent left">Aloho,欢迎来到4uke</li>
+            <div style="clear: both;"></div>
+            <li class="msgContent right"></li>
+        </ul>
+        <textarea id="msg_input" class="loading" placeholder="请输入" style="resize: none;"></textarea>
+        <div class="textBox">
+            <a id="binggo1" href="#">
+                <span id="binggo" class="iconfont icon-xiaolian4"></span>
+            </a>
+            <a id="binggo1" href="#">
+                <span id="binggo" class="iconfont icon-tupian3"></span>
+            </a>
+            <a id="binggo1" href="#">
+                <span id="binggo" class="iconfont icon-dianzan6"></span>
+            </a>
+                <button id="sendbtn" class="sendbtn">发送</button>
+        </div>
+        <div class="promo">客服软件由美洽提供</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $("#chat").click(function(){
+		$(".chatBox").fadeIn("fast");
+		$("#chat").hide();
+	})
+	$(".icon-xiajiantou").click(function(){
+		$(".chatBox").fadeOut("fast");
+		$("#chat").show("fast");
+	})
+	$(".icon-sousuo").click(function(){
+		$(".search").fadeIn("2000");
+		$("body").animate({
+			background:"black",
+			opacity:'0.7'
+		},20)
+		$(".setSearch").focus();
+	})
+	$(".setSearch").blur(function(){
+		$(".search").fadeOut("2000");
+		$("body").animate({
+			opacity:"1"
+		})
+    })
+    window.onload=function(){
+	var sendbtn = document.getElementById("sendbtn");
+	var oUL = document.getElementById("content");
+	var textArea = document.getElementById("msg_input");
+	sendbtn.onclick = function(){
+		var div = document.createElement("div");
+		div.style = "clear: both;";
+		
+		var li = oUL.lastElementChild.cloneNode(true);
+		var inputvalue = this.previousElementSibling.value; 
+		li.innerHTML = inputvalue;
+		
+		oUL.appendChild(div);
+		oUL.appendChild(li);
+		
+		textArea.value = "";//?
+		
+		li.scrollIntoView();//将目标元素滚动到可见的位置
+	}
+	
+	textArea.onkeypress = function(e){
+		var evt = e || event;
+		var _key = evt.keyCode || evt.which;//IE使用keyCode  FF使用which
+		if((_key == 13 || _key==10) || evt.ctrlKey){ //回车键 并且 按下ctrl
+			var div = document.createElement("div");
+			div.style.clear = "both";
+			var li = oUL.lastElementChild.cloneNode(true);
+			li.innerHTML = textArea.value;
+			oUL.appendChild(div);
+			oUL.appendChild(li);
+			
+			textArea.value = "";
+			li.scrollIntoView();
+		}
+	}
+}
+</script>

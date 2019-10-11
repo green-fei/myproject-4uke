@@ -1,0 +1,148 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,td,input,textarea{
+	margin:0;
+	padding:0;
+}
+ul,ol,li{
+	list-style: none;
+}
+body a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+body{
+	font-family: "微软雅黑";
+}
+/* banner */
+.banner{
+    width:100%;
+    height:35px;
+    background: #f5f5f5;
+    display: flex;
+}
+.bannerLeft{
+    width:213px;
+    height:35px;
+    margin-left:36px;
+    display: flex;
+    align-items: center;
+}
+.bannerLeft .resLeft{
+    text-decoration: none;
+    display: block;
+    font-size:12px;
+    margin-right:14px;
+    color:#b1b1b1;
+}
+.bannerLeft .resLeft:nth-child(1){
+    color: #f37a5d;
+}
+.bannerLeft .resLeft:nth-child(2){
+    margin-right:25px;
+}
+.resLeft:nth-child(2):hover{
+    color:#f37a5d;
+}
+.resLeft:nth-child(3):hover{
+    color:#f37a5d;
+}
+.bannerRight{
+    width:686px;
+    height:35px;
+    margin-left:284px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:12px;
+}
+.bannerRight .art{
+    text-decoration: none;
+    color:#b1b1b1;
+}
+.taobaoBox1{
+    width:64px;
+    height:34px;
+    margin-top:19px;
+}
+.taobaoBox1:hover .taobao1{
+    display: block;
+}
+.taobaoBox2{
+    width:77px;
+    height:34px;
+    margin-top:10px;
+}
+.taobaoBox2:hover .taobao2{
+    display: block;
+}
+.taobaoBox3{
+    width:88px;
+    height:134px;
+    margin-top:118px;
+}
+.taobaoBox3:hover .taobao3{
+    display: block;
+}
+.taobaoBox4{
+    width:64px;
+    height:34px;
+    margin-top:19px;
+}
+.taobaoBox4:hover .taobao4{
+    display: block;
+}
+.art .icon-xiajiantou{
+    font-size: 12px;
+    font-weight:bold;
+}
+.art .icon-gouwuche{
+    color: #f37a5d;
+}
+/* .art .icon-shoucangjiatianchong{
+    color: #f37a5d;
+} */
+.art .icon-wangzhandaohang{
+    font-size: 12px;
+    color: #f37a5d;
+    font-weight: bold;
+}
+.art:hover{
+    color: #f37a5d;
+}
+.taobao{
+    width:80px;
+    background: white;
+    position: fixed;
+    display: none;
+}
+.taobao1{
+    right:590px;
+    top:35px;
+}
+.taobao2{
+    right:410px;
+    top:35px;
+}
+.taobao3{
+    right:250px;
+    top:35px;
+}
+.taobao4{
+    right:150px;
+    top:35px;
+}
+.taobao .baby{
+    display: block;
+    text-decoration: none;
+    font-size:12px;
+    margin-top: 15px;
+    color: #b1b1b1;
+    text-align: center;
+}
+/* shop */
+.shop{
+    width:100%;
+    height:78px;
+    background: lightsalmon;
+}
