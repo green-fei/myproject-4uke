@@ -291,6 +291,16 @@ p{
 	text-decoration: none;
 	// background: rgba(0,0,0,.3);
 }
+.threeIcon{
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-top-color:rgba(0, 0, 0, 0.5);
+	margin-left:20px;
+	margin-top: 0px;
+    margin-left: 11px;
+	display: none;
+}
 #weixin:hover .icon-weixin-copy{
 	color: green;
 }
@@ -301,13 +311,16 @@ p{
 	color: rgb(185, 44, 44);
 }
 .box{
-	width:50px;
+	width:60px;
 	height:30px;
 	background: grey;	
 	font-size:10px;
 	background: rgba(0, 0, 0, 0.5);
-	border-radius: 6px;
+	border-radius: 4px;
 	color:rgb(221, 219, 219);
+	margin-top: -72px;
+    margin-left: -12px;
+	display: none;
 }
 /* footer */
 .footer{

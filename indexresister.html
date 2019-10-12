@@ -91,7 +91,7 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="确认密码">
             </div>
         </form>
-        <div class="loginBox">已有账号？请<a id="goin" href="#">直接登录</a></div>
+        <div class="loginBox">已有账号？请<a id="goin" href="login.html">直接登录</a></div>
         <input class="resBtn" type="button" value="注册">
         <div class="spn">
             <span class="idLogin">社交账号登录</span>
@@ -101,16 +101,19 @@
             <a id="weixin" href="#">
                 <span class="iconfont icon-weixin-copy"></span>
                 <div class="box weixinBox">微信登录</div>
+                <div class="threeIcon firIcon"></div>
             </a>
             <a id="weixin" href="#">
                 <span class="iconfont icon-QQ1"></span>
                 <div class="box qqBox">QQ登录</div>
+                <div class="threeIcon twoIcon"></div>
             </a>
             <a id="weixin" href="#">
                 <span class="iconfont icon-weibo-copy"></span>
                 <div class="box weiboBox">微博登录</div>
+                <div class="threeIcon thirdIcon"></div>
             </a>
-        </div>
+            </div>
     </div>
 </div>
 <div class="search">
@@ -229,6 +232,30 @@
 			opacity:"1"
 		})
     })
+    $(".icon-weixin-copy").mouseenter(function(){
+		$(".firIcon").fadeIn("2000");
+		$(".weixinBox").fadeIn("2000");
+    });
+    $(".icon-weixin-copy").mouseleave(function(){
+		$(".firIcon").hide("fast");
+		$(".weixinBox").hide("fast");    
+    })
+    $(".icon-QQ1").mouseenter(function(){
+		$(".twoIcon").fadeIn("2000");
+		$(".qqBox").fadeIn("2000");
+    });
+    $(".icon-QQ1").mouseleave(function(){
+		$(".twoIcon").hide("fast");
+		$(".qqBox").hide("fast");
+	});
+    $(".icon-weibo-copy").mouseenter(function(){
+		$(".thirdIcon").fadeIn("2000");
+		$(".weiboBox").fadeIn("2000");
+    });
+    $(".icon-weibo-copy").mouseleave(function(){
+		$(".thirdIcon").hide("fast");
+		$(".weiboBox").hide("fast");
+    });
     window.onload=function(){
 	var sendbtn = document.getElementById("sendbtn");
 	var oUL = document.getElementById("content");

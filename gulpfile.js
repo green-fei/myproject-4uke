@@ -16,8 +16,12 @@ gulp.task('copyfile',async ()=>{
         .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish\\css'));
 
     });
-    // gulp.watch('*.html',async ()=>{
-    //     gulp.src('*.html')
-    //     .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish'));
-    // });
+    gulp.watch('*.html',async ()=>{
+        gulp.src('*.html')
+        .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish'));
+    });
+    gulp.watch('css/**/*',async ()=>{
+        gulp.src('css/**/*')
+        .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish\\css'));
+    });
 });

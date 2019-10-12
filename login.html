@@ -79,7 +79,7 @@
 <!-- banner   -->
 <div class="banner">
     <div class="registerBox">
-        <div class="h"><p>注册</p></div>
+        <div class="h"><p>登录</p></div>
         <form>
             <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="手机/邮箱/用户名">
@@ -89,7 +89,7 @@
             </div>
         </form>
         <div class="loginBox">
-            <a id="register" href="#">注册</a>
+            <a id="register" href="indexresister.html">注册</a>
             <a id="goin" href="#">忘记密码</a>
         </div>
         <input class="resBtn" type="button" value="登录">
@@ -101,15 +101,17 @@
             <a id="weixin" href="#">
                 <span class="iconfont icon-weixin-copy"></span>
                 <div class="box weixinBox">微信登录</div>
-                <div class="threeIcon"></div>
+                <div class="threeIcon firIcon"></div>
             </a>
             <a id="weixin" href="#">
                 <span class="iconfont icon-QQ1"></span>
                 <div class="box qqBox">QQ登录</div>
+                <div class="threeIcon twoIcon"></div>
             </a>
             <a id="weixin" href="#">
                 <span class="iconfont icon-weibo-copy"></span>
                 <div class="box weiboBox">微博登录</div>
+                <div class="threeIcon thirdIcon"></div>
             </a>
         </div>
     </div>
@@ -125,7 +127,7 @@
 	</div>
 </div>
 <!-- footer -->
-<div class="footer">
+<div class="footer"> 
     <div class="footerMain">
         <div class="footerMid">
             <div class="shop">
@@ -230,6 +232,47 @@
 			opacity:"1"
 		})
     })
+    $(".icon-weixin-copy").mouseenter(function(){
+		$(".firIcon").slideDown("fast");
+		$(".weixinBox").slideDown("fast");
+    });
+    $(".icon-weixin-copy").mouseleave(function(){
+		$(".firIcon").hide("fast");
+		$(".weixinBox").hide("fast");    
+    })
+    $(".icon-QQ1").mouseenter(function(){
+		$(".twoIcon").fadeIn("2000");
+		$(".qqBox").fadeIn("2000");
+    });
+    $(".icon-QQ1").mouseleave(function(){
+		$(".twoIcon").hide("fast");
+		$(".qqBox").hide("fast");
+	});
+    $(".icon-weibo-copy").mouseenter(function(){
+		$(".thirdIcon").fadeIn("2000");
+		$(".weiboBox").fadeIn("2000");
+    });
+    $(".icon-weibo-copy").mouseleave(function(){
+		$(".thirdIcon").hide("fast");
+		$(".weiboBox").hide("fast");
+    });
+    // $(".icon-weixin-copy").mouseenter(function(){
+    //     $(".threeIcon").animate({
+    //         top:"-120px"
+
+    //     },200);
+    //     $(".weixinBox").animate({
+    //         top:"-120px"
+    //     },200);
+    // })
+    // $(".icon-QQ1").mouseenter(function(){
+    //     $(".threeIcon").fadeIn("2000");
+    //     $(".qqBox").fadeIn("2000");
+    // })
+    // $(".icon-weibo-copy").mouseenter(function(){
+    //     $(".threeIcon").fadeIn("2000");
+    //     $(".weiboBox").fadeIn("2000");
+    // })
     window.onload=function(){
 	var sendbtn = document.getElementById("sendbtn");
 	var oUL = document.getElementById("content");
