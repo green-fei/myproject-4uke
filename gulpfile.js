@@ -1,6 +1,7 @@
 // 请求gulp
 const gulp=require("gulp");
 const sass=require('gulp-sass');
+
 // 执行监听任务
 //复制项目下的所有代码复制到服务器下的发布目录下
     gulp.task('copyfile',async ()=>{
@@ -13,5 +14,10 @@ gulp.task('copyfile',async ()=>{
         gulp.src('sass/**/*')
         .pipe(sass())
         .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish\\css'));
+
     });
+    // gulp.watch('*.html',async ()=>{
+    //     gulp.src('*.html')
+    //     .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish'));
+    // });
 });
