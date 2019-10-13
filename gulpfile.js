@@ -24,4 +24,8 @@ gulp.task('copyfile',async ()=>{
         gulp.src('css/**/*')
         .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish\\css'));
     });
+    gulp.watch('*.php',async ()=>{
+        gulp.src('*.php')
+        .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish'));
+    });
 });
