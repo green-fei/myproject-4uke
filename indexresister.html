@@ -115,6 +115,7 @@
             </a>
             </div>
     </div>
+    <div class="leftSpn"></div>
 </div>
 <div class="search">
 	<div class="searchBox">搜索</div>
@@ -124,7 +125,7 @@
 	<div class="oksearch">
 		<a id="remove" href="#">取消</a>
 		<a id="remove" href="#">确定</a>
-	</div>
+    </div>
 </div>
 <!-- footer -->
 <div class="footer">
@@ -256,7 +257,12 @@
 		$(".thirdIcon").hide("fast");
 		$(".weiboBox").hide("fast");
     });
-
+    // $(".spn").mouseenter(function(){
+    //     $(".leftSpn").animate({
+    //         left:"+1120px"
+    //     },200)
+    // });
+// document.getElementsByClassName("resBtn")
 $("#resBtn").onclick = function(){
 //1、
 let xhr = new XMLHttpRequest();
