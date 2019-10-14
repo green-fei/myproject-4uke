@@ -264,6 +264,20 @@ p{
 	margin-left:34px;
 	border-radius: 2px;
 	border:none;
+	transition:all .3s;
+}
+#messageBox {
+    width: 300px;
+    font-size: 30px;
+    margin-top: -42px;
+    margin-left: 417px;
+}
+.resBtn:hover{
+	background:#e64e4e;
+	opacity:0.93;
+	box-shadow: 0px 0px 0px 0px #e64e4e;
+	color:white;
+	border:none;
 }
 .spn{
 	width:100px;
@@ -272,7 +286,7 @@ p{
 .idLogin{
 	width:100px;
 	display: block;
-	margin-top:60px;
+	margin-top:100px;
 	// margin:0 auto;
 	color: rgb(153, 149, 149);
 }

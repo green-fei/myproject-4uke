@@ -256,10 +256,18 @@ p{
 	border:none;
 	transition:all .3s;
 }
+#messageBox {
+    width: 300px;
+    font-size: 30px;
+    margin-top: -42px;
+    margin-left: 417px;
+}
 .resBtn:hover{
 	background:#e64e4e;
 	opacity:0.93;
 	box-shadow: 0px 0px 0px 0px #e64e4e;
+	color:white;
+	border:none;
 }
 .spn{
 	width:100px;
@@ -268,7 +276,7 @@ p{
 .idLogin{
 	width:100px;
 	display: block;
-	margin-top:60px;
+	margin-top:100px;
 	// margin:0 auto;
 	color: rgb(153, 149, 149);
 }
@@ -279,6 +287,7 @@ p{
 	margin-left:61px;
 	margin-top:-210px;
 	border-radius:3px;
+	display:none;
 }
 
 .registerBox hr{
@@ -342,7 +351,7 @@ p{
 	width:100%;
 	height:186px;
 	background: #f5f5f5;
-	padding-top: 48px;
+	// padding-top: 48px;
 }
 .footerMain{
 	width:1140px;

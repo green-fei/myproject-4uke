@@ -14,7 +14,7 @@
         echo("数据库出错".mysql_error());
     }else{
         //2)、选择库（选择目的地）
-        mysql_select_db("mydb1908",$conn);
+        mysql_select_db("myfile",$conn);
 
         //3)、执行SQL语句（数据传输）
         //3.1)
@@ -26,7 +26,7 @@
             mysql_close($conn);
             echo "-1";//用户名被使用
         }else{
-            $sqlstr="insert into vip(username,userpass) values('$username','$userpass')";
+            $sqlstr="insert into vip(username,userpress) values('$username','$userpass')";
             $result = mysql_query( $sqlstr,$conn);
             //4)、关闭数据库
             mysql_close($conn);

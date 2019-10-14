@@ -88,11 +88,12 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="设置密码">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="确认密码">
+                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="确认密码">
             </div>
         </form>
-        <div class="loginBox">已有账号？请<a id="goin" href="login.html">直接登录</a></div>
-        <input class="resBtn" type="button" value="注册">
+        <div class="loginBox">已有账号？请<a id="goin" href="login.html" target="_blank">直接登录</a></div>
+        <input id="resBtn1" class="resBtn" type="button" value="注册">
+        <div id="messageBox"></div>
         <div class="spn">
             <span class="idLogin">社交账号登录</span>
         </div>
@@ -210,6 +211,7 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/indexregister.js"></script>
 <script>
     $("#chat").click(function(){
 		$(".chatBox").fadeIn("fast");
@@ -262,35 +264,8 @@
     //         left:"+1120px"
     //     },200)
     // });
-// document.getElementsByClassName("resBtn")
-$("#resBtn").onclick = function(){
-//1、
-let xhr = new XMLHttpRequest();
 
-xhr.open("post","regSave.php",true);
-
-xhr.onreadystatechange = function(){
-    if(xhr.readyState==4 && xhr.status==200){
-        if(xhr.responseText=="-1"){
-            $("#messageBox").style.color ="red";
-            $("#messageBox").innerHTML ="用户名被人使用";
-        }else if(xhr.responseText=="0"){
-            $("#messageBox").style.color ="red";
-            $("#messageBox").innerHTML ="注册失败";
-        }else if(xhr.responseText=="1"){
-            $("#messageBox").style.color ="greenyellow";
-            $("#messageBox").innerHTML ="注册成功，请<a href='login.html'>登录</a>";
-        }
-    }
-}
-    //post方式：设置请求头
-    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
-    let sendstr = `username=${$("#username").value}&userpass=${$("#userpass").value}`;
-    xhr.send(sendstr);
-
-}
-    window.onload=function(){
+window.onload=function(){
 	var sendbtn = document.getElementById("sendbtn");
 	var oUL = document.getElementById("content");
 	var textArea = document.getElementById("msg_input");

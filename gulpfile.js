@@ -28,4 +28,8 @@ gulp.task('copyfile',async ()=>{
         gulp.src('*.php')
         .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish'));
     });
+    gulp.watch('js/**/*',async ()=>{
+        gulp.src('js/**/*')
+        .pipe(gulp.dest('C:\\phpStudy\\WWW\\publish\\js'));
+    });
 });
